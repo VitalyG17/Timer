@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="img/timer-logo.svg" alt="Timer logo" style="width: 120px" />
+      </div>
+      <form class="timer">
+        <div class="info">
+          Set timer on:
+          <input type="number" name="time" value="10" /> min
+        </div>
+        <div class="counter">
+          <div class="num" id="hour_tens">0</div>
+          <div class="num" id="hour">0</div>
+          <div class="dots">:</div>
+          <div class="num" id="min_tens">0</div>
+          <div class="num" id="min">0</div>
+          <div class="dots">:</div>
+          <div class="num" id="sec_tens">0</div>
+          <div class="num" id="sec">0</div>
+        </div>
+        <div class="buttons">
+          <button type="submit" class="button" id="play">
+            <img src="img/play.svg" alt="Icon play" style="width: 35px" />
+          </button>
+          <button type="submit" class="button" id="pause">
+            <img src="img/pause.svg" alt="Icon pause" style="width: 35px" />
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
